@@ -1,12 +1,10 @@
-import { nanoid } from 'nanoid'
-
 import getData from './helpers/get-data';
 
 import setDataLS from './helpers/set-data-ls';
 
-export default function addItem(product) {
+export default function addItem(product, id) {
 	const productObj = {
-		id: nanoid(),
+		id,
 		name: product,
 	};
 
