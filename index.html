@@ -7,6 +7,7 @@
     <title>Vanilla App Template</title>
     
     <script type="module" crossorigin src="/spliteFiles/commonHelpers.js"></script>
+    <link rel="modulepreload" crossorigin href="/spliteFiles/assets/vendor-342e672c.js">
     <link rel="stylesheet" href="/spliteFiles/assets/index-6999ff10.css">
   </head>
   <body>
@@ -24,9 +25,12 @@
   </nav>
 </header>
 
+    <form id="task-form">
+      <input type="text" name="taskName" />
+      <button type="submit">Додати</button>
+    </form>
 
-    
-
+    <ul id="task-list"></ul>
     
   </body>
 </html>
